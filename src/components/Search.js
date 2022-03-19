@@ -3,11 +3,15 @@ import { useGlobalContext } from '../context'
 
 const Search = () => {
     const searchElement = useRef(null)
-    const { searchValue,dispatch } = useGlobalContext()
+    const { loading,searchValue,dispatch } = useGlobalContext()
     
 
     const getSearchValue = (e) => {
-        dispatch({type:'SEARCH_ITEM',payload:e.target.value})
+        dispatch({ type: 'SEARCH_ITEM', payload: e.target.value })
+        dispatch({ type: "LOADING" })
+        setTimeout(() => {
+            dispatch({ type:"STOP_LOADING"})
+        },300)
     }
 
     useEffect(() => {

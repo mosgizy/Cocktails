@@ -14,8 +14,6 @@ const CocktailList = () => {
         }
     }
 
-    console.log(newCocktails())
-
     return (
         <section>
             {
