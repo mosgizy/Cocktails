@@ -4,7 +4,7 @@ import Search from '../components/Search'
 
 const Home = () => {
     return (
-        <div className='mt-44 mb-20 px-6 lg:px-0'>
+        <div className='mt-44 w-[85vw] max-w-[1170px] m-auto mb-20'>
             <Search />
             <CocktailList />
         </div>

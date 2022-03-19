@@ -4,12 +4,12 @@ import logo from '../logo.svg'
 
 const Navbar = () => {
     return (
-        <header className='bg-white fixed top-0 w-full py-6 px-8 shadow-2xl'>
-            <nav className='flex justify-between items-center lg:max-w-[70vw] m-auto'>
-                <div className='w-52'>
+        <header className='bg-white fixed top-0 w-full py-5 px-8 shadow-2xl'>
+            <nav className='flex justify-between items-center lg:max-w-[60vw] m-auto'>
+                <div className='w-[12rem]'>
                     <img src={logo} alt="logo" />
                 </div>
-                <ul className='flex gap-4 text-2xl tracking-widest'>
+                <ul className='flex gap-6 text-2xl tracking-widest'>
                     <li>
                         <Link to="/">Home</Link>
                     </li>

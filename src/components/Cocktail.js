@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Cocktail = ({ id, name, glass, alcoholic, image }) => {
 
     return (
-        <div className='bg-white shadow-2xl rounded lg:flex-initial lg:w-1/4'>
+        <div className='bg-white shadow-2xl rounded md:basis-[48%] lg:basis-[31.5%]'>
             <div>
                 <img src={image} alt={name} className="h-80 w-full rounded-t object-cover" />
             </div>

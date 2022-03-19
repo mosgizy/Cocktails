@@ -17,18 +17,20 @@ const CocktailList = () => {
     console.log(newCocktails())
 
     return (
-        <section className="mt-24 max-w-[90vw] m-auto">
+        <section>
             {
-                loading ? <Loading /> : newCocktails().length > 0 &&
-                    <div>
+                loading ? <Loading /> : newCocktails().length > 0 ?
+                    <div className="mt-24">
                         <h1 className='text-center text-4xl capitalize tracking-widest mb-12 font-bold'>cocktails</h1>
-                        <div className='flex flex-col gap-14 lg:flex-row justify-center lg:flex-wrap lg:gap-8'>
+                        <div className='flex flex-col gap-14 lg:flex-row lg:flex-wrap lg:gap-8 cocktails'>
                             {
                                 newCocktails().map((cocktail) => {
                                     return <Cocktail key={cocktail.id} {...cocktail} />
                                 })
                             }
                         </div>
+                    </div> : <div>
+                        <h1 className='capitalize text-center mt-8 tracking-widest text-4xl font-black'>no cocktails match your search criteria</h1>
                     </div>
             }
         </section>
