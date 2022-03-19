@@ -3,7 +3,7 @@ import { useGlobalContext } from '../context'
 
 const Search = () => {
     const searchElement = useRef(null)
-    const { loading,searchValue,dispatch } = useGlobalContext()
+    const {searchValue,dispatch } = useGlobalContext()
     
 
     const getSearchValue = (e) => {
