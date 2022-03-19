@@ -17,7 +17,7 @@ const CocktailDetails = () => {
   }, [loading])
 
   return (
-    <div className='mt-40 mb-12 max-w-[80vw] m-auto'>
+    <div className='mt-40 mb-12 w-[85vw] max-w-[1170px] m-auto'>
       {
         loading ? <Loading /> :
           <div>
@@ -28,7 +28,7 @@ const CocktailDetails = () => {
               <h1 className='text-4xl font-black'>{cocktailInfo.name}</h1>
             </header>
             <section className='flex flex-col gap-6 items-center lg:flex-row'>
-              <article className='w-full'>
+              <article className='w-full basis-[70%]'>
                 <img src={cocktailInfo.image} alt={cocktailInfo.name} className="rounded w-full" />
               </article>
               <article>
