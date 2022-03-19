@@ -28,16 +28,10 @@ const CocktailDetails = () => {
               <h1 className='text-4xl font-black'>{cocktailInfo.name}</h1>
             </header>
             <section className='flex flex-col gap-6 items-center lg:flex-row'>
-              <article>
+              <article className='w-full'>
                 <img src={cocktailInfo.image} alt={cocktailInfo.name} className="rounded w-full" />
               </article>
-              <article className=''>
-                {/* <p><span>name:</span>{cocktailInfo.name}</p>
-                <p><span>category:</span>{cocktailInfo.category}</p>
-                <p><span>info:</span>{cocktailInfo.alcoholic}</p>
-                <p><span>glass:</span>{cocktailInfo.glass}</p>
-                <p><span>instructions:</span>{cocktailInfo.instructions}</p>
-                <p><span>ingredients:</span>{cocktailInfo.ingredients.map(ingredient => ingredient)}</p> */}
+              <article>
                 <div className='flex flex-col gap-5 text-lg capitalize tracking-wide font-bold'>
                   {
                     Object.keys(cocktailInfo).map((key) => {
